@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannre{
+  width: 100%;
+  height: 120vh;
+  background-image: linear-gradient(rgba(252, 252, 252, 0),rgba(252, 252, 252, 0)),url(Media/Photos/Challenge.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+.bannre h2{
+  font-size: 50;
+  font-weight: 400;
+  color:cyan;
+  padding-left: 30;
+}
+.navbar{
+  width: 100%;
+  margin:auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 120 px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: ' ';
+  height: 3px; 
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;  
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  /* width: 100%; */
+  /* position: absolute; */
+  /* top: 60%; */
+  transform: translateY(-10%);
+  text-align: center;
+  /* color: rgb(0, 250, 250); */
+}
+.content p{
+  width: 100%;
+  position:600px;
+  top: 80%;
+  transform: translateZ(-50%);
+  text-align: center; 
+  /* color: rgb(0, 0, 0)  ; */
+ } 
+
+/* .content p{
+  margin: 20px auto; */
+  /* font-weight: 100; */
+  /* line-height: 25px; */
+/* } */
+
+.intro{
+  width: 30%;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  padding:5%;
+  color: rgb(0, 0, 0);
+  font-size: 30;
+  font-weight: 200;
+}
+
+.bannre1{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(252, 252, 252, 0),rgba(252, 252, 252, 0)),url(Media/Photos/profile.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+.content1 p{
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  /* background-color: rgb(207,232,220); */
+  padding: 1em;
+}
+
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border :none;
+}
+img {
+  pointer-events: none;
+}
